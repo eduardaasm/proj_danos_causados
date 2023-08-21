@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>857</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="page_login">
+       <widget class="QFrame" name="frame_login">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>45</y>
+          <width>681</width>
+          <height>421</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_icone">
+           <property name="text">
+            <string>Ícone</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_login">
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="placeholderText">
+            <string>Login</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_senha">
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="placeholderText">
+            <string>Senha</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QPushButton" name="pushButton_entrar">
+           <property name="text">
+            <string>Entrar</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="3" column="0" colspan="3">
+          <widget class="QFrame" name="frame_msg_erro">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="label_msg_erro">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 96, 117);</string>
+              </property>
+              <property name="text">
+               <string>Usuário ou senha incorretos</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_fechar_msg_erro">
+              <property name="text">
+               <string>X</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_cadastro">
+       <widget class="QFrame" name="frame_5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>69</y>
+          <width>791</width>
+          <height>331</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_logo">
+         <property name="geometry">
+          <rect>
+           <x>24</x>
+           <y>25</y>
+           <width>121</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Logo</string>
+         </property>
+        </widget>
+        <widget class="QFrame" name="frame_msg_bar">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>30</y>
+           <width>661</width>
+           <height>80</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label_msg_bar">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>15</y>
+            <width>471</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Erro de Cadastro</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_fechar_msg">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>20</y>
+            <width>101</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>X</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="gridLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>19</x>
+           <y>149</y>
+           <width>701</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_organico">
+            <property name="text">
+             <string>Orgânico</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QRadioButton" name="radioButton_sim">
+            <property name="text">
+             <string>Sim</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_quantidade"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_material">
+            <property name="text">
+             <string>Material</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_quantidade">
+            <property name="text">
+             <string>Quantidade(kg)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_material"/>
+          </item>
+          <item row="3" column="1" colspan="2">
+           <widget class="QPushButton" name="pushButton_salvar">
+            <property name="text">
+             <string>Salvar</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QRadioButton" name="radioButton_nao">
+            <property name="text">
+             <string>Não</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_listar_materiais">
+       <widget class="QFrame" name="frame_listagem">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>29</y>
+          <width>781</width>
+          <height>521</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>30</y>
+           <width>591</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <row>
+          <property name="text">
+           <string>New Row</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Material</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Orgânico</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quantidade (kg)</string>
+          </property>
+         </column>
+        </widget>
+        <widget class="QFrame" name="frame_botoes_salvar_alterar">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>40</y>
+           <width>117</width>
+           <height>281</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QPushButton" name="pushButton_salvar_processo">
+            <property name="text">
+             <string>Salvar</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_alterar">
+            <property name="text">
+             <string>Alterar</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_corrigir">
+            <property name="text">
+             <string>Corrigir</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_cadastrar">
+       <widget class="QFrame" name="frame_cadastro">
+        <property name="geometry">
+         <rect>
+          <x>29</x>
+          <y>29</y>
+          <width>771</width>
+          <height>461</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_logo_2">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>70</y>
+           <width>55</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Logo</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_descricao">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>300</y>
+           <width>55</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Descriçãoa</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_cadastrar">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>60</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Cadastrar</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_listar">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>150</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Listar</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_sair_sistema">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>270</y>
+           <width>101</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Sair do Sistema</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
