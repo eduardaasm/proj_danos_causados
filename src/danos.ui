@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_login">
        <widget class="QFrame" name="frame_login">
@@ -472,5 +472,38 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_fechar_msg_erro</sender>
+   <signal>clicked()</signal>
+   <receiver>frame_msg_erro</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>682</x>
+     <y>355</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>647</x>
+     <y>283</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_fechar_msg</sender>
+   <signal>clicked()</signal>
+   <receiver>frame_msg_bar</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>701</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>681</x>
+     <y>177</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
