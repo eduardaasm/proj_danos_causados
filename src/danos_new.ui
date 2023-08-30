@@ -24,11 +24,17 @@
        <widget class="QFrame" name="frame_login">
         <property name="geometry">
          <rect>
-          <x>40</x>
-          <y>45</y>
+          <x>70</x>
+          <y>210</y>
           <width>681</width>
-          <height>421</height>
+          <height>111</height>
          </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -37,39 +43,6 @@
          <enum>QFrame::Raised</enum>
         </property>
         <layout class="QGridLayout" name="gridLayout_2">
-         <item row="0" column="0">
-          <spacer name="horizontalSpacer">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLabel" name="label_icone">
-           <property name="text">
-            <string>Ícone</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="lineEdit_login">
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="placeholderText">
-            <string>Login</string>
-           </property>
-          </widget>
-         </item>
          <item row="2" column="1">
           <widget class="QLineEdit" name="lineEdit_senha">
            <property name="echoMode">
@@ -83,14 +56,24 @@
            </property>
           </widget>
          </item>
-         <item row="4" column="1">
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_login">
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="placeholderText">
+            <string>Login</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
           <widget class="QPushButton" name="pushButton_entrar">
            <property name="text">
             <string>Entrar</string>
            </property>
           </widget>
          </item>
-         <item row="0" column="2">
+         <item row="1" column="2">
           <spacer name="horizontalSpacer_2">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
@@ -103,48 +86,114 @@
            </property>
           </spacer>
          </item>
-         <item row="3" column="0" colspan="3">
-          <widget class="QFrame" name="frame_msg_erro">
-           <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
+         <item row="1" column="0">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
            </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
            </property>
-           <layout class="QHBoxLayout" name="horizontalLayout">
-            <item>
-             <widget class="QLabel" name="label_msg_erro">
-              <property name="enabled">
-               <bool>true</bool>
-              </property>
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>25</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">background-color: rgb(255, 96, 117);</string>
-              </property>
-              <property name="text">
-               <string>Usuário ou senha incorretos</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="pushButton_fechar_msg_erro">
-              <property name="text">
-               <string>X</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
+          </spacer>
+         </item>
+         <item row="4" column="1">
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_icone">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>60</y>
+          <width>150</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>141</width>
+          <height>141</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>141</width>
+          <height>141</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Ícone</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_msg_erro">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>320</y>
+          <width>681</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_msg_erro">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 96, 117);</string>
+           </property>
+           <property name="text">
+            <string>Usuário ou senha incorretos</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_fechar_msg_erro">
+           <property name="text">
+            <string>X</string>
+           </property>
           </widget>
          </item>
         </layout>
@@ -226,76 +275,56 @@
           <rect>
            <x>19</x>
            <y>149</y>
-           <width>751</width>
-           <height>173</height>
+           <width>701</width>
+           <height>151</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout">
-          <item row="4" column="0">
-           <widget class="QLabel" name="label_causado_prox_rio">
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_organico">
             <property name="text">
-             <string>Apresenta algum dano causado pela proximidade ao rio?</string>
+             <string>Orgânico</string>
             </property>
            </widget>
           </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_endereco">
-            <property name="text">
-             <string>Endereço</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1" colspan="2">
-           <widget class="QLineEdit" name="lineEdit_endereco"/>
-          </item>
-          <item row="1" column="1" colspan="2">
-           <widget class="QLineEdit" name="lineEdit_quais_danos"/>
-          </item>
-          <item row="4" column="1">
+          <item row="2" column="1">
            <widget class="QRadioButton" name="radioButton_sim">
             <property name="text">
              <string>Sim</string>
             </property>
            </widget>
           </item>
-          <item row="4" column="2">
-           <widget class="QRadioButton" name="radioButton_nao">
-            <property name="text">
-             <string>Não</string>
-            </property>
-           </widget>
+          <item row="1" column="1" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_quantidade"/>
           </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="label_maior_risco">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_material">
             <property name="text">
-             <string>Qual o maior risco de morar nas proximidades?</string>
+             <string>Material</string>
             </property>
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QLabel" name="label_quais_danos">
+           <widget class="QLabel" name="label_quantidade">
             <property name="text">
-             <string>Quais os danos?</string>
+             <string>Quantidade(kg)</string>
             </property>
            </widget>
           </item>
-          <item row="2" column="1" colspan="2">
-           <widget class="QLineEdit" name="lineEdit_maior_risco"/>
+          <item row="0" column="1" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_material"/>
           </item>
           <item row="3" column="1" colspan="2">
-           <widget class="QLineEdit" name="lineEdit_fiscalizacao"/>
-          </item>
-          <item row="3" column="0">
-           <widget class="QLabel" name="label_fiscalizacao">
-            <property name="text">
-             <string>Existe fiscalização?</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="0" colspan="3">
            <widget class="QPushButton" name="pushButton_salvar">
             <property name="text">
              <string>Salvar</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QRadioButton" name="radioButton_nao">
+            <property name="text">
+             <string>Não</string>
             </property>
            </widget>
           </item>
@@ -323,34 +352,29 @@
          <property name="geometry">
           <rect>
            <x>30</x>
-           <y>50</y>
-           <width>611</width>
-           <height>271</height>
+           <y>30</y>
+           <width>591</width>
+           <height>291</height>
           </rect>
          </property>
+         <row>
+          <property name="text">
+           <string>New Row</string>
+          </property>
+         </row>
          <column>
           <property name="text">
-           <string>Endereço</string>
+           <string>Material</string>
           </property>
          </column>
          <column>
           <property name="text">
-           <string>Quais os danos?</string>
+           <string>Orgânico</string>
           </property>
          </column>
          <column>
           <property name="text">
-           <string>Qual o maior risco de morar nas proximidades?</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Existe fiscalização?</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Apresenta algum dano causado pela proximidade ao rio?</string>
+           <string>Quantidade (kg)</string>
           </property>
          </column>
         </widget>
@@ -440,8 +464,8 @@
         <widget class="QLabel" name="label_descricao">
          <property name="geometry">
           <rect>
-           <x>40</x>
-           <y>280</y>
+           <x>50</x>
+           <y>300</y>
            <width>55</width>
            <height>16</height>
           </rect>
@@ -461,6 +485,19 @@
          </property>
          <property name="text">
           <string>Cadastrar</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_listar">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>150</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Listar</string>
          </property>
         </widget>
         <widget class="QPushButton" name="pushButton_sair_sistema">
@@ -484,38 +521,5 @@
   </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>pushButton_fechar_msg_erro</sender>
-   <signal>clicked()</signal>
-   <receiver>frame_msg_erro</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>682</x>
-     <y>355</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>647</x>
-     <y>283</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_fechar_msg</sender>
-   <signal>clicked()</signal>
-   <receiver>frame_msg_bar</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>701</x>
-     <y>148</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>681</x>
-     <y>177</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
